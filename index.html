@@ -304,14 +304,29 @@
                 <li class="social-networks-item"><a href="" class="social-networks-link"> <svg class="social-networks-icon" >
                     <use href="./images/icons.svg#icon-tvitter "></use>
                 </svg></a></li>
-                <li class="social-networks-item"><a href="" class="social-networks-link"> <svg class="social-networks-icon" >
-                    <use href="./images/icons.svg#icon-facebook "></use>
-                </svg></a></li>
+                <li class="social-networks-item">
+                    <a href="" class="social-networks-link">
+                         <svg class="social-networks-icon" >
+                             <use href="./images/icons.svg#icon-facebook "></use>
+                        </svg>
+                    </a>
+                </li>
                 <li class="social-networks-item"><a href="" class="social-networks-link"> <svg class="social-networks-icon" >
                     <use href="./images/icons.svg#icon-linkedin "></use>
                 </svg></a></li>
             </ul>
         </div>
+            <form name="mail-form" class="mail-form">
+                <label for="mail" class="mail-form-text">Подпишитесь на рассылку</label>
+                <div class="mail-form-box">
+                    <input type="email" name="mail" id="mail" class="mail-form-edit" placeholder="E-mail">
+                    <button type="submit" class="mail-form-button">Подписаться 
+                        <svg class="mail-form-icon" height="24px" width="24px">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -321,6 +336,58 @@
             <use href="./images/icons.svg#icon-close "></use>
         </svg>
     </button>
+    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+    <form name="modal-form" class="modal-form">
+        <label class="modal-text">
+            Имя
+            <div class="modal-edit-blok">
+                <input type="text" class="modal-edit modal-edit-border" name="use-name">
+                <svg class="modal-edit-icon" height="24px" width="24px">
+                    <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+            </div>     
+        </label>
+       
+        <label class="modal-text">
+            Телефон
+            <div class="modal-edit-blok">
+                <input type="tel" class="modal-edit modal-edit-border" name="tel">
+                <svg class="modal-edit-icon" height="24px" width="24px">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+            </div>
+        </label>
+        
+        <label class="modal-text">
+            Почта
+            <div class="modal-edit-blok">
+                <input type="email" class="modal-edit modal-edit-border" name="email">
+                <svg class="modal-edit-icon" height="24px" width="24px">
+                    <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+            </div>
+            
+        </label>
+        
+        <label  class="modal-text">
+            Комментарий
+            <textarea name="comment" class="modal-comment modal-edit-border"  cols="30" rows="10" placeholder="Введите текст"></textarea>
+        </label>
+        
+
+        <div class="modal-element-centr">
+            
+            <label class="modal-check-text">
+                <input type="checkbox" name="treaty" class="modal-check">
+                <svg class="modal-check-icon" height="15px" width="16px">
+                    <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                Соглашаюсь с рассылкой и принимаю 
+                <a href="" class="modal-link">Условия договора</a>
+        </label>
+            <button type="submit" class="modal-button-submit">Отправить</button>
+        </div>
+    </form>
 </div>
     </div>
 <script src="./js/modal.js"></script>
