@@ -502,7 +502,6 @@ a {
   transform: translate(-50%, -50%);
   transition: transform var(--function-time);
   width: 528px;
-  height: 581px;
   padding: 40px;
 
   background: var(--fon-color);
@@ -557,10 +556,10 @@ a {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
 .modal-edit-blok {
   position: relative;
-  margin-top: 4px;
   margin-bottom: 10px;
 }
 .modal-edit-border:hover,
@@ -597,8 +596,10 @@ a {
   height: 120px;
   padding: 12px 16px;
   margin-top: 4px;
-  margin-bottom: 20px;
   resize: none;
+}
+.modal-comment-text {
+  margin-bottom: 20px;
 }
 .modal-comment::placeholder {
   font-family: Roboto;
