@@ -623,6 +623,10 @@ a {
   text-decoration: underline;
   color: var(--accent-color);
 }
+.modal-check:focus + .modal-check-icon,
+.modal-check:hover + .modal-check-icon {
+  border-color: var(--accent-color);
+}
 .modal-check:checked + .modal-check-icon {
   border: none;
   background-color: var(--accent-color);
